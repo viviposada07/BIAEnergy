@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+*.db
+*.csv
+*.xlsx
+docker/postgres-data/
+*.log
+.vscode/
