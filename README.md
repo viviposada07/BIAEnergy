@@ -36,8 +36,8 @@ cd BIAEnergy
 5. Elimina contenedores y volúmenes al finalizar el uso: docker-compose down -v
 
 ## Reportes generados
-- enriched_postcodes.csv: archivo enriquecido con la info geográfica.
-- report.xlsx: contiene:
+- codigos_postales.csv: archivo enriquecido con la info geográfica.
+- datos_estadisticas.xlsx: contiene:
   - Códigos postales mas comunes.
   - Porcentaje de coordenadas sin código postal.
   - Estadisticas generales.
