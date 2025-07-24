@@ -15,7 +15,8 @@ Este proyecto es una solución para la prueba técnica de Bia Energía. Consiste
 ├── Dockerfile                  # Imagen de la aplicación
 ├── requirements.txt            # Dependencias de Python
 ├── wait-for-db.sh              # Espera activa hasta que la base de datos esté disponible
-└── README.md                   # Este archivo```
+└── README.md
+```
 
 ## Requisitos
 - Docker y Docker Compose
