@@ -7,6 +7,8 @@ def enrich_and_store(engine, input_path, output_path):
     df = pd.read_csv(input_path)
     df.drop_duplicates(subset=["lat", "lon"], inplace=True)
 
+    df = df.head(1000) #limito la cantidad
+
     # Variables de monitoreo
     duplicates_enriched = 0
     duplicates_errors = 0
