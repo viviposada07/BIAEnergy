@@ -1,5 +1,3 @@
-CREATE DATABASE biaenergy;
-
 CREATE TABLE IF NOT EXISTS public.enriched_postcodes (
     latitude DOUBLE PRECISION,
     longitude DOUBLE PRECISION,
@@ -12,6 +10,8 @@ CREATE TABLE IF NOT EXISTS public.enriched_postcodes (
     load_dts TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (latitude, longitude)
 );
+
+CREATE INDEX IF NOT EXISTS idx_postcode ON enriched_postcodes (postcode);
 
 CREATE TABLE IF NOT EXISTS public.error_log (
     latitude DOUBLE PRECISION,

@@ -1,9 +1,23 @@
+# Ignorar entornos virtuales y compilados
 __pycache__/
 *.pyc
-.env
+*.pyo
+*.pyd
 *.db
+*.sqlite3
+
+# Ignorar archivos temporales o grandes
+*.log
 *.csv
 *.xlsx
-docker/postgres-data/
-*.log
+*.zip
+*.tar.gz
+*.bak
+
+# Ignorar repositorios y configuración local
+.git/
 .vscode/
+.env
+.venv/
+.idea/
+.DS_Store

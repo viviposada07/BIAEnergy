@@ -20,6 +20,8 @@ def create_tables(engine):
                 load_dts TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 PRIMARY KEY (latitude, longitude)
             );
+                          
+            CREATE INDEX IF NOT EXISTS idx_postcode ON enriched_postcodes (postcode);
         """))
 
         conn.execute(text("""
