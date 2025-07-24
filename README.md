@@ -2,7 +2,7 @@
 Este proyecto es una solución para la prueba técnica de Bia Energía. Consiste en leer un archivo de coordenadas (`postcodesgeo.csv`), enriquecer los datos mediante la API pública `postcodes.io`, almacenarlos en una base de datos PostgreSQL y generar reportes automáticos con estadísticas relevantes.
 
 ## Estructura del Proyecto
-bia_energy_project/
+```bia_energy_project/
 ├── data/                       # Archivo original CSV con coordenadas
 ├── reports/                    # Archivos CSV y Excel generados con los reportes
 ├── src/                        # Código fuente de la aplicación
@@ -15,7 +15,7 @@ bia_energy_project/
 ├── Dockerfile                  # Imagen de la aplicación
 ├── requirements.txt            # Dependencias de Python
 ├── wait-for-db.sh              # Espera activa hasta que la base de datos esté disponible
-└── README.md                   # Este archivo
+└── README.md                   # Este archivo```
 
 ## Requisitos
 - Docker y Docker Compose
